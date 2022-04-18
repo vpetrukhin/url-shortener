@@ -1,6 +1,8 @@
+@import '../../styles/index.scss';
+
 .app {
     color: red;
     &Text {
-        color: green;
+        color: $viola;
     }
 }
