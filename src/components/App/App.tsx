@@ -1,12 +1,10 @@
+import { MainSection } from '../../sections/';
 import styles from './App.module.scss';
 
-function App() {
+export const App = () => {
   return (
     <div className={styles.app}>
-      worked!
-      <p className={styles.appText}>kdnvcjcnk</p>
+      <MainSection />
     </div>
   );
 }
-
-export default App;
