@@ -1,0 +1,31 @@
+@import '../../styles/index.scss';
+
+.button {
+    padding: 8px 23px;
+    margin: 0;
+    border: none;
+    border-radius: 28px;
+    background-color: transparent;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 22px;
+    color: $grey;
+    
+    &Big {
+        padding: 12px 40px;
+    }
+    &Transparent {
+        &:hover {
+            cursor: pointer;
+            color: $black;
+        }
+    }
+    &Green {
+        background-color: $green;
+        color: $white;
+        &:hover {
+            cursor: pointer;
+            background-color: $light-green;
+        }
+    }
+}
