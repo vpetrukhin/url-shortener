@@ -2,6 +2,7 @@ import { MainSectionProps } from './MainSection.props';
 
 import { Button, Container, Logo } from '../../components';
 import styles from './MainSection.module.scss';
+import { URLFORM_ID } from '../../utils/constans';
 
 export const MainSection = ({ className, ...props }: MainSectionProps) => {
     return (
@@ -16,7 +17,9 @@ export const MainSection = ({ className, ...props }: MainSectionProps) => {
                         <p className={styles.offerText}>
                             Повышайте узнаваемость своего бренда и получайте подробные сведения о том, как работают ваши ссылки.
                         </p>
-                        <Button color='green' size='big'>Начать</Button>
+                        <Button className={styles.button} color='green' size='big'>
+                            <a className={styles.buttonLink} href={`#${URLFORM_ID}`}>Начать</a>
+                        </Button>
                     </div>
             </Container>
         </section>

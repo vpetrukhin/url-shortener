@@ -1,0 +1,29 @@
+.form {
+    box-sizing: border-box;
+    padding: 52px 65px;
+    display: flex;
+    gap: 24px;
+    background: url('../../assets/form_bg.jpg') no-repeat center/cover;
+    border-radius: 10px;
+}
+.input {
+    width: 85%;
+}
+.button {
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 760px) {
+    .form {
+        padding: 24px;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .input {
+        width: 100%;
+        & input {
+            padding: 6px 16px;
+            font-size: 16px;
+        }
+    }
+}

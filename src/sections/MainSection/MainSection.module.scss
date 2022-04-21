@@ -4,6 +4,8 @@
     position: relative;
     background-color: $white;
     overflow-x: hidden;
+    height: 100vh;
+    padding-bottom: 50px;
 }
 
 .header {
@@ -16,6 +18,7 @@
 
 .offer {
     max-width: 563px;
+    margin-bottom: 140px;
     &Title {
         margin: 0;
         margin-bottom: 5px;
@@ -34,6 +37,11 @@
         letter-spacing: 0.15px;
         color: $grey;
     }
+}
+
+.buttonLink {
+    text-decoration: none;
+    color: inherit;
 }
 
 @media screen and (max-width: 760px) {
@@ -61,5 +69,7 @@
 }
 
 @media screen and (max-width: 515px) {
-    
+    .mainSection {
+        height: auto;
+    }
 }
