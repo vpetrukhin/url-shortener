@@ -16,4 +16,22 @@
     &::placeholder {
         opacity: 0.5;
     }
+    &Wrapper {
+        position: relative;
+    }
+    &Error {
+        border: 3px solid $red;
+        color: $red;
+        &::placeholder {
+            color: $red;
+        }
+    }
+}
+.error {
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: 0.109091px;
+    color: $red;
 }
