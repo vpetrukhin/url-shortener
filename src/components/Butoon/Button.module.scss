@@ -10,7 +10,9 @@
     font-size: 15px;
     line-height: 22px;
     color: $grey;
-    
+    &:disabled {
+        background-color: $grey;
+    }
     &Big {
         padding: 12px 40px;
         font-size: 20px;
