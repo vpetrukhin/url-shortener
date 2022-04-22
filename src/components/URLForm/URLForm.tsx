@@ -10,8 +10,8 @@ import {URL_REGEXP} from "../../utils/constans";
 export const URLForm = ({ className, ...props }: URLFormProps) => {
     const [value, setValue] = useState<string>('');
     const [isFormValid, setIsFormValid] = useState<boolean>(true);
-
     const dispatch = useAppDispatch();
+
 
     const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         setValue(e.target.value);

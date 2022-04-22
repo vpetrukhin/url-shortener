@@ -1,6 +1,6 @@
 import { FormSectionProps } from './FormSection.props';
 import styles from './FormSection.module.scss';
-import { Container, URLForm } from '../../components';
+import {Container, URLForm, URlItem} from '../../components';
 import { URLFORM_ID } from '../../utils/constans';
 import { useAppSelector } from '../../hooks/stateHooks';
 
@@ -10,10 +10,12 @@ export const FormSection = ({ className, ...props }: FormSectionProps) => {
     return (
         <section id={URLFORM_ID} className={`${styles.formSection} ${className}`} {...props}>
             <Container>
-                <URLForm />
-                {urlList.map((url) => (
-                    <p key={url.code}>{url.long} {url.code}</p>
-                ))}
+                <URLForm className={styles.urlForm} />
+                <ul className={styles.urlList}>
+                    {urlList.map((url) => (
+                        <URlItem item={url} key={url.code} />
+                    ))}
+                </ul>
             </Container>
         </section>
     )

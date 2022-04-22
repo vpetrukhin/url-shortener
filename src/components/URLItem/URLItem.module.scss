@@ -1,0 +1,33 @@
+@import '../../styles/index.scss';
+
+.url {
+  margin-bottom: 16px;
+  padding: 16px 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: $white;
+  border-radius: 5px;
+  &Text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.8;
+    letter-spacing: 0.15px;
+    color: $black;
+    &Color {
+      margin-left: auto;
+      color: $green;
+    }
+  }
+}
+
+.button {
+  border-radius: 5px;
+  &Copied {
+    background: $dark-viola;
+    &:hover {
+      background: $dark-viola;
+    }
+  }
+}
