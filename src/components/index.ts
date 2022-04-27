@@ -6,6 +6,7 @@ import { Menu } from './Menu/Menu';
 import { URLForm } from './URLForm/URLForm';
 import { Input } from './Input/Input';
 import { URlItem } from "./URLItem/URlItem";
+import { Footer } from "./Footer/Footer";
 
 
 export {
@@ -17,4 +18,5 @@ export {
     URLForm,
     Input,
     URlItem,
+    Footer,
 }

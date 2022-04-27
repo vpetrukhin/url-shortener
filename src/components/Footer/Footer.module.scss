@@ -1,0 +1,27 @@
+@import "../../styles/index";
+
+.footer {
+  padding: 30px 0;
+  background-color: $black;
+  &Inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  &Text {
+    margin: 0;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: -0.234375px;
+    color: $white;
+  }
+  &Link {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.5s;
+    &:hover {
+      color: $green;
+    }
+  }
+}
