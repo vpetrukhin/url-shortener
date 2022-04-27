@@ -1,0 +1,47 @@
+@import '../../styles/index.scss';
+
+.burger {
+    width: 24px;
+    height: 21px;
+    margin: 0;
+    padding: 0;
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    &Line {
+        width: 100%;
+        height: 3px;
+        position: relative;
+        background-color: $grey;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .burger {
+        display: flex;
+    }
+    .menu {
+        position: absolute;
+        top: 96px;
+        right: 24px;
+        width: 90%;
+        padding: 40px 0;
+        background: $dark-viola;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 90%;
+        &Login {
+            color: $white;
+        }
+    }
+}

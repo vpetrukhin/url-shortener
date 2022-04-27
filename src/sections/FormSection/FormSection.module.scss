@@ -1,0 +1,18 @@
+@import '../../styles/index.scss';
+
+.formSection {
+    box-sizing: border-box;
+    height: 100vh;
+    padding: 30px 0;
+    background-color: $light-grey;
+}
+
+.urlForm {
+    margin-bottom: 24px;
+}
+
+.urlList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}

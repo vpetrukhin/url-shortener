@@ -1,0 +1,40 @@
+@import '../../styles/index.scss';
+
+.input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 14px 32px;
+    border: none;
+    outline: none;
+    background-color: $white;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.80;
+    letter-spacing: 0.15px;
+    color: $black;
+    &::placeholder {
+        opacity: 0.5;
+    }
+    &Wrapper {
+        position: relative;
+    }
+    &Error {
+        border: 3px solid $red;
+        color: $red;
+        &::placeholder {
+            color: $red;
+        }
+    }
+}
+.error {
+    position: absolute;
+    bottom: -25px;
+    left: 0;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.12;
+    letter-spacing: 0.109091px;
+    color: $red;
+}

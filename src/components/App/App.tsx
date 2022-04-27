@@ -1,12 +1,12 @@
+import {FormSection} from '../../sections/';
 import styles from './App.module.scss';
+import {Footer} from "../Footer/Footer";
 
-function App() {
-  return (
-    <div className={styles.app}>
-      worked!
-      <p className={styles.appText}>kdnvcjcnk</p>
-    </div>
-  );
+export const App = () => {
+    return (
+        <div className={styles.app}>
+            <FormSection />
+            <Footer />
+        </div>
+    );
 }
-
-export default App;
